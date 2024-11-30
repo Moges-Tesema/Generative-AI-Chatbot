@@ -11,5 +11,5 @@ const HomePage = () => {
         <BackgroundChanger/>
       </div>
     );
-}
+} 
 export default HomePage;

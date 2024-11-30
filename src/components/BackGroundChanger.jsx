@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 const BackgroundChanger = () => {
   // Array of background images
   const backgrounds = [
+    'bg-humanoidRobot',
     'bg-coderRobot',
     'bg-teachingRobot', // Replace with your actual class names for images
-    'bg-humanoidRobot',
+    
   ];
 
   // State to track the current background index and opacity
@@ -15,7 +16,7 @@ const BackgroundChanger = () => {
   useEffect(() => {
     // Function to change the background image
     const changeBackground = () => {
-      setOpacity(0); // Start fading out
+      setOpacity(0.5); // Start fading out
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
         setOpacity(1); // Fade in the new background
